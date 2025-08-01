@@ -1,26 +1,59 @@
+package com.example.studentapp; // Declares the package the class belongs to
 
-package com.example.studentapp;
-
+// Student class represents a student entity with id, name, age, and grade
 public class Student {
-    private int id;
-    private String name;
-    private int age;
-    private String grade;
 
+    // Private instance variables (encapsulation principle)
+    private int id;         // Unique identifier for the student
+    private String name;    // Name of the student
+    private int age;        // Age of the student
+    private String grade;   // Grade/class of the student
+
+    // Constructor: initializes a new Student object with given values
     public Student(int id, String name, int age, String grade) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.grade = grade;
+        this.id = id;           // Sets the student's ID
+        this.name = name;       // Sets the student's name
+        this.age = age;         // Sets the student's age
+        this.grade = grade;     // Sets the student's grade
     }
 
-    public int getId() { return id; }
-    public String getName() { return name; }
-    public int getAge() { return age; }
-    public String getGrade() { return grade; }
+    // Getter method for 'id'
+    public int getId() {
+        return id;
+    }
 
-    public void setId(int id) { this.id = id; }
-    public void setName(String name) { this.name = name; }
-    public void setAge(int age) { this.age = age; }
-    public void setGrade(String grade) { this.grade = grade; }
+    // Getter method for 'name'
+    public String getName() {
+        return name;
+    }
+
+    // Getter method for 'age'
+    public int getAge() {
+        return age;
+    }
+
+    // Getter method for 'grade'
+    public String getGrade() {
+        return grade;
+    }
+
+    // Setter method for 'id'
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    // Setter method for 'name'
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Setter method for 'age'
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Setter method for 'grade'
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 }
